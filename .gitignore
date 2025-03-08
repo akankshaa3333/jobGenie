@@ -1,0 +1,17 @@
+# Frontend
+frontend/node_modules/
+frontend/.env
+
+# Backend
+backend/node_modules/
+backend/.env
+
+# Python
+ml/venv/
+scraping/venv/
+__pycache__/
+*.pyc
+
+# General
+.DS_Store
+.env
