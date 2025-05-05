@@ -1,0 +1,299 @@
+.home-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2d6cdf;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 10px;
+  flex-grow: 0.5;
+  max-width: 500px;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  padding: 5px;
+  margin-left: 5px;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #f0f0f0;
+}
+
+.login-btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #2d6cdf;
+  color: white;
+}
+
+.user-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.notification-icon {
+  position: relative;
+  cursor: pointer;
+  color: #333;
+  font-size: 1.2rem;
+  padding: 8px;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 8px;
+  height: 8px;
+  background-color: #f5576c;
+  border-radius: 50%;
+}
+
+.notification-dropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  z-index: 1000;
+}
+
+.notification-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.notification-item.unread {
+  background-color: #f8f9fa;
+}
+
+.user-profile {
+  position: relative;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 200px;
+  display: none;
+  z-index: 1000;
+}
+
+.user-profile:hover .profile-dropdown {
+  display: block;
+}
+
+.hero-section {
+  margin: 40px 0;
+  padding: 0 20px;
+}
+
+.highlight {
+  color: #2d6cdf;
+}
+
+/* Cards Section */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.card {
+  width: 250px;
+  height: 500px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+
+.card.internship {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #333;
+}
+
+.card.jobs {
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  color: #333;
+}
+
+.card.practice {
+  background: linear-gradient(135deg, #f093fb, #f5576c);
+  color: #333;
+}
+
+.card.competitions {
+  background: linear-gradient(135deg, #84fab0, #8fd3f4);
+  color: #333;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.upload-modal {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.upload-area {
+  border: 2px dashed #2d6cdf;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .search-container {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+  width: 400px; /* Pehle se bada kar diya */
+  height: 450px; /* Card height bhi increase ki */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom right, #a8edea, #fed6e3);
+}
+
+.card img {
+  width: 100%; /* Full width use kar raha hai */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 300px; /* Taaki image kaafi badi ho */
+  object-fit: cover; /* Image ko cut hone se bachane ke liye */
+}
+
+
+.card h2, .card p {
+  text-align: center;
+  padding: 5px;
+}
+ 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+}  
+}

@@ -1,0 +1,89 @@
+/* General Container */
+.competitions-container {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+  }
+  
+  /* Banner */
+  .banner {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-radius: 8px;
+  }
+  
+  /* Cards Layout */
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Competition Cards */
+  .competition-card {
+    width: 280px;
+    height: 420px;  /* Same height as Learn */
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures button stays at bottom */
+    overflow: hidden;
+    position: relative;
+    color: black;
+    padding-bottom: 10px;
+  }
+  
+  .competition-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .competition-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .competition-card p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  
+  /* Button */
+  .btn {
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+    margin: auto auto 10px auto; /* Keeps button at bottom */
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Hover Effect */
+  .competition-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  

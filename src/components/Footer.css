@@ -1,0 +1,56 @@
+.footer-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.trust-us {
+  font-weight: bold;
+  color: #2d6cdf;
+}
+
+/* Floating Logo Slider */
+.logo-slider {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  background: white;
+  padding: 10px 0;
+}
+
+.logo-track {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+.logo-track img {
+  height: 50px;
+  margin: 0 20px;
+}
+
+/* Smooth scrolling effect */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Copyright Section */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+  

@@ -1,0 +1,109 @@
+/* Internship List Container */
+.internship-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Heading Style */
+.internship-container h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Internship List Grid */
+.internship-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Internship Card */
+.internship-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.internship-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Internship Image */
+.internship-image {
+  width: 100%;
+  max-width: 300px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Internship Content */
+.internship-content {
+  text-align: center;
+  width: 100%;
+}
+
+.internship-content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.internship-content p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.location {
+  font-style: italic;
+  color: #666;
+}
+
+/* Apply Button */
+.apply-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+}
+
+/* No Internships Message */
+.no-internships {
+  font-size: 18px;
+  font-weight: bold;
+  color: #888;
+}
+
+/* Loading & Error Messages */
+.loading, .error {
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .internship-list {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -1,0 +1,129 @@
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.logout-btn {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.resume-upload-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.upload-area {
+  border: 2px dashed #2d6cdf;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.upload-area:hover {
+  background-color: #f5f9ff;
+}
+
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.upload-icon {
+  margin-bottom: 15px;
+  color: #2d6cdf;
+}
+
+.file-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  color: #555;
+}
+
+.file-types {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.selected-file {
+  margin-top: 15px;
+  color: #2d6cdf;
+  font-weight: bold;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-btn {
+  background-color: #2d6cdf;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.upload-btn:hover {
+  background-color: #1a56c7;
+}
+
+.upload-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.progress-container {
+  height: 6px;
+  background: #eee;
+  border-radius: 3px;
+  margin: 20px auto;
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #4CAF50;
+  transition: width 0.3s;
+}
+
+.success-message {
+  color: #4CAF50;
+  font-weight: bold;
+  margin-top: 15px;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

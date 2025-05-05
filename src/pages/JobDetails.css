@@ -1,0 +1,36 @@
+.job-details-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .job-details-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .job-details-container p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .apply-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .apply-button:hover {
+    background: #0056b3;
+  }
+  
